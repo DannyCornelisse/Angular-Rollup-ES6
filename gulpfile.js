@@ -19,7 +19,7 @@ gulp.task('serve', ['watch'], function() {
 gulp.task('watch', function() {
 	
 	// compile js
-	gulp.watch('./js/**/*.js', ['bundle:js']);
+	gulp.watch('./js/**/**.js', ['bundle:js']);
 
 });
 
