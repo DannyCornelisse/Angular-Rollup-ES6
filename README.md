@@ -2,10 +2,20 @@
 Simple Angular app writting in ES6 bundled with Rollup
 
 
-
-
-##### run with BrowserSync
+##### Install with NPM
 
 ```
-  gulp-serve
+npm install
+```
+
+##### Run with BrowserSync
+
+```
+gulp serve
+```
+
+##### Only bundle with Rollup
+
+```
+gulp compile:js
 ```
