@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular - Rollup</title>
+
+    <base href="/">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="assets/icomoon/style.css">
+
+    <!-- Minified styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body>
+
+    <div class="container" ng-controller="appController as vm">
+
+        <h1>{{vm.title}}</h1>
+
+        <ul>
+            <li ng-repeat="item in vm.list">
+                <span class="icon-checkbox-checked"></span>
+                {{item}}
+            </li>
+        </ul>
+
+        <p class="footer">
+            {{vm.footerText}}
+        </p>
+
+    </div>
+
+    <!-- Vendor scripts -->
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+
+    <!-- Minified scripts -->
+    <script type="text/javascript" src="_compiled/js/main.js"></script>
+  </body>
+</html>

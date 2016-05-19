@@ -1,0 +1,26 @@
+{
+  "name": "angular-rollup",
+  "version": "1.0.0",
+  "description": "Angular rollup bundler",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "^1.5.5"
+  },
+  "devDependencies": {
+    "angular": "^1.5.5",
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1",
+    "gulp-rollup": "^1.9.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "rollup": "^0.26.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Angular",
+    "Rollup"
+  ],
+  "author": "Nick Thesing",
+  "license": "ISC"
+}
