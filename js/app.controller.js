@@ -1,15 +1,15 @@
 class appController {
 
-	constructor(appService) {
+	constructor(appService, appConfig) {
 
-		this.title = 'Clean Angular code with';
+		this.title = appConfig['title'];
 
 		this.list = appService.getList();
 
-		this.footerText = 'Served by BrowserSync';
+		//this.footerText = 
 	}
 }
 
-appController.$inject = ['appService'];
+appController.$inject = ['appService', 'appConfig'];
 
 export default appController;

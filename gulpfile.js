@@ -27,11 +27,17 @@ gulp.task('bundle:js', function() {
 
 	var rollup = require('gulp-rollup'),
 		sourcemaps = require('gulp-sourcemaps'),
-		browserSync = require('browser-sync');
+		browserSync = require('browser-sync'),
+		string = require('rollup-plugin-string');
 
 	gulp.src('js/main.js', {read: false})
 		.pipe(rollup({
-			sourceMap: true
+			sourceMap: true,
+			plugins: [
+				string(
+					{extensions: ['html']}
+				)
+			]
 		})).on('error', function(err) {
 			console.error(err.message);
             browserSync.notify(err.message, 3000);
