@@ -36,25 +36,25 @@ var appConfig = {
 
 var template = "<footer class=\"Footer\">\n\t<p>{{vm.text}}</p>\n</footer>";
 
-class baseController {
+class footerController {
 	constructor() {
 		this.text = 'Served with BrowserSync';
 	}
 }
 
-let baseComponent = {
+let footerComponent = {
 	template,
 	restrict: 'E',
 	binding: {},
-	controller: baseController,
+	controller: footerController,
 	controllerAs: 'vm'
 }
 
-let baseModule = angular.module('baseModule', [])
+let footerModule = angular.module('footerModule', [])
 
-	.component('baseComponent', baseComponent)
+	.component('footerComponent', footerComponent)
 
-angular.module('app', ['baseModule'])
+angular.module('app', ['footerModule'])
 		.constant('appConfig', appConfig)
 		.service('appService', appService)
 		.controller('appController', appController);

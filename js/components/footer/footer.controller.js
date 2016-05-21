@@ -1,7 +1,7 @@
-class baseController {
+class footerController {
 	constructor() {
 		this.text = 'Served with BrowserSync';
 	}
 }
 
-export default baseController;
+export default footerController;
